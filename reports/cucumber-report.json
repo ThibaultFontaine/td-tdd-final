@@ -1,0 +1,145 @@
+[
+  {
+    "description": "  As a registered user\n  I want to create a new book\n  So that I can manage and publish my titles",
+    "elements": [
+      {
+        "description": "",
+        "id": "book-creation;successful-book-creation",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Successful book creation",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "user@example.com",
+                      "password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the following user exists:",
+            "match": {
+              "location": "file:/Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2192501
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user is logged in",
+            "match": {
+              "location": "file:/Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:32"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 123493540,
+              "error_message": "Error: Login failed: JWT token not received\n    at World.<anonymous> (file:///Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:42:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author",
+                      "description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "\"My First Book\"",
+                      "\"John Doe\"",
+                      "\"Description...\""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user sends a request to create a book with:",
+            "match": {
+              "location": "file:/Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the response status should be \"201\"",
+            "match": {
+              "location": "file:/Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author",
+                      "description"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "\"My First Book\"",
+                      "\"John Doe\"",
+                      "\"Description...\""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the response should contain the book details:",
+            "match": {
+              "location": "file:/Users/thibaultfontaine/coursJS/td-tdd-final/features/step_definitions/book_creation.steps.js:74"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "book-creation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Book Creation",
+    "tags": [],
+    "uri": "features/book_creation.feature"
+  }
+]
